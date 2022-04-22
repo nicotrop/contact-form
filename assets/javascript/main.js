@@ -13,7 +13,10 @@ $.addEventListener("DOMContentLoaded", () => {
       message: $.querySelector("#message").value,
     };
     console.log("data worked!");
-    const response = await axios.post(" http://localhost:3000/form", data);
+    const response = await axios.post(
+      "https://3a29-154-6-22-190.ngrok.io/form",
+      data
+    );
     console.log(response);
   });
 });
